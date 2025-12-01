@@ -1,17 +1,13 @@
-import { useState } from 'react'
-
-import './App.css'
-
+import Header from './Header'
+import { Outlet } from "react-router-dom";
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Charles Chen Portfolio</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <Header/>
+      
+      <div className="p-5">
+        <Outlet/>
       </div>
       
     </>

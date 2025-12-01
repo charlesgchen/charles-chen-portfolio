@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing dependencies...
+      - npm ci
+  build:
+    commands:
+      - echo Building the React app...
+      - npm run build
+  post_build:
+    commands:
+      # DIRECT DEPLOYMENT (The "Push")
+      - echo Deploying to S3...
+      - aws s3 sync dist/ s3://YOUR_BUCKET_NAME --delete
+      
+      # INVALIDATION (Force CloudFront to refresh)
+      - echo Invalidating CloudFront...
+      - aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
