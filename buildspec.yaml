@@ -15,8 +15,8 @@ phases:
     commands:
       # DIRECT DEPLOYMENT (The "Push")
       - echo Deploying to S3...
-      - aws s3 sync dist/ s3://YOUR_BUCKET_NAME --delete
+      - aws s3 sync dist/ s3://cc-resume-123 --delete
       
       # INVALIDATION (Force CloudFront to refresh)
       - echo Invalidating CloudFront...
-      - aws cloudfront create-invalidation --distribution-id YOUR_DIST_ID --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E1WPXVWFQYNLFO --paths "/*"
