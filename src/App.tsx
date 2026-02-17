@@ -1,17 +1,23 @@
-import Header from './Header'
-import { Outlet } from "react-router-dom";
-function App() {
+import Header from "./Header";
+import Hero from "./Hero";
+import About from "./About";
+import Projects from "./Projects";
+import Experience from "./Experience";
+import Footer from "./Footer";
 
+function App() {
   return (
     <>
-      <Header/>
-      
-      <div className="p-5">
-        <Outlet/>
-      </div>
-      
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+      </main>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
