@@ -33,7 +33,7 @@ export interface SocialLink {
 // ─── Hero ───────────────────────────────────
 export const heroData = {
     name: "Charles Chen",
-    title: "Full-Stack Developer & ML Enthusiast",
+    title: "Full-Stack Developer & ML Student",
     tagline:
         "UofT Computer Science & Statistics (ML) student. AWS-certified developer building full-stack applications with React, TypeScript, Java, and Python — from scalable REST APIs to machine learning pipelines.",
 };
@@ -42,7 +42,7 @@ export const heroData = {
 export const aboutData = {
     bio: [
         "I'm a Computer Science and Statistics (Machine Learning & Data Mining) student at the University of Toronto (GPA 3.62/4.0), passionate about building impactful software that solves real problems. With hands-on co-op experience and an AWS Developer Associate certification, I bring both academic rigor and production-ready skills to every project.",
-        "I thrive in fast-paced Agile teams and constantly seek practical applications for software. Whether it's designing MCP Gateway architectures, automating legacy migrations, or winning datathons, I'm driven by curiosity and the desire to ship clean, testable code.",
+        "I thrive in fast-paced Agile teams, and constantly seek practical applications for software. Whether it's designing MCP Gateway architectures, automating legacy migrations, or winning datathons, I'm driven by curiosity and the desire to ship clean, testable code.",
     ],
 };
 
@@ -144,7 +144,7 @@ export const experiences: Experience[] = [
         bullets: [
             "Contributing to design and implementation of managed MCP Gateway for enterprise AI agent platform, abstracting MCP servers behind a single interface",
             "Implementing SSO + Role-Based Access Control (RBAC) for enterprise security",
-            "Designing APIs key service, database schema, and containerized PostgreSQL for tool registry, user/org identity, and audit/usage logs",
+            "Designing API key service, database schema, and containerized PostgreSQL for tool registry, user/org identity, and audit/usage logs",
             "Prioritizing small, safe PRs to improve review efficiency and code maintainability",
         ],
     },
